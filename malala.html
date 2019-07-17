@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+.btn-primary {
+	width:50%;
+}
+@media only screen and (max-width: 600px) {
+  .col-xs-12 {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:50px;
+    margin-bottom:0px;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="/">Library Catalogue</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active">
+<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Categories
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="#">Historical</a>
+<a class="dropdown-item" href="#">Horror</a>
+<a class="dropdown-item" href="#">Biography</a>
+</li>
+</ul>
+<form class="form-inline my-2 my-lg-0">
+<input class="form-control mr-sm-2" placeholder="Search your book here" type="search" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+</div>
+</nav>
+<nav aria-label="breadcrumb" role="navigation">
+<nav aria-label="breadcrumb" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="/">Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Library</li>
+</ol>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" style="max-width:300px;line-height:400px;margin:auto;">
+      <div class="img-event" style="text-align: center;">
+                            <img style="overflow: auto;display: inline-block;vertical-align: middle;" class="group list-group-image img-fluid" src="https://b2n5k8x3.stackpathcdn.com/assets/thumbs/969/96921e068f4aa96042ff3d9425368769.jpg" alt="" />
+                        </div>
+    </div>
+    <div class="col-sm-4" style="min-width:60%;margin-left:auto;margin-right:auto;">
+      <div class="caption card-body">
+                            <h4 class="group card-title inner list-group-item-heading">
+                                I am Malala: The Story of the Girl Who Stood Up for Education</h4>
+                            <p class="group inner list-group-item-text">
+                                I Am Malala: The Story of the Girl Who Stood Up for Education and was Shot by the Taliban is an autobiographical book by Malala Yousafzai, co-written with Christina Lamb....</p>
+                            <div class="col-xs-12" style="text-align:center;">
+                                    <a class="btn btn-primary" href="/malala_read.html">Read <i class="fas fa-book-reader"></i></a>
+                                </div>
+                        </div>    
+    </div>
+  </div>
+</div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+</body>
+</html>
