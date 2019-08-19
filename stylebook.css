@@ -1,0 +1,26 @@
+.btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.b-margin {
+  margin-bottom: 3em;
+}
+.fsize{
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .fsize {
+      font-size: 20px;
+    }
+}
