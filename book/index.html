@@ -35,8 +35,10 @@
     		-o-transition: all 0.3s;
     		transition: all 0.3s;
 	}
-	.navbar-collapse {
-		border-top: 1px solid #47748b;
+	@media (max-width: 991px) {
+		.navbar-collapse {
+			border-top: 1px solid #47748b;
+		}
 	}
       </style>
    </head>
@@ -103,6 +105,7 @@
 	
 	
       </nav>
+<div id="mainbody">
       <div class="container">
          <div class="b-margin"></div>
 <div class="b-margin"></div>
@@ -160,6 +163,11 @@
 		}
 		$('#search').removeClass('right-align');
 	});
+	$('#mainbody').on('click', function () {
+                $('#dismiss').click();
+        });
+
       </script>
+	      </div>
    </body>
 </html>
