@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Collapsible sidebar using Bootstrap 4</title>
+      <!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <!-- Our Custom CSS -->
+      <link rel="stylesheet" href="dist/css/style3.css">
+      <link rel="stylesheet" href="dist/css/style.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+      <!-- Font Awesome JS -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+      <style>
+         .bg-light {
+         background-color: #7386d5!important;
+         }
+	.svg-inline--fa {
+		color: white;
+	}
+	.input-group {
+		width: 90%;
+		margin:10px;
+	}
+	.right-align {
+		position: absolute;
+    		top: 10px;
+    		right: 10px;
+    		cursor: pointer;
+    		-webkit-transition: all 0.3s;
+    		-o-transition: all 0.3s;
+    		transition: all 0.3s;
+	}	
+      </style>
+   </head>
+   <body>
+      <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+         <div id="dismiss" class="btn btn-default">
+            <i class="fas fa-arrow-left"></i>
+         </div>
+
+         <ul class="list-unstyled components">
+            <li class="active">
+               <a href="#">Home</a>
+            </li>
+            <li>
+               <a href="#">About us</a>
+               <a href="#">Contact us</a>
+            </li>
+            <li>
+               <a href="#">FAQ's</a>
+            </li>
+            <li>
+               <form class="navbar-form navbar-left" action="/action_page.php">
+                  <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Search" name="search" style="
+                        border-radius: 4px;
+                        margin-right: 5px;
+                        ">
+                     <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" style="
+                           background-color: #8292DD;
+                           border-radius: 4px;
+                           ">
+				<i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                     </div>
+                  </div>
+               </form>
+            </li>
+         </ul>
+      </nav>
+      <!-- Page Content  -->
+      <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width:100%;position: fixed;">
+	
+         <button type="button" id="sidebarCollapse" class="btn btn-default navbar-brand">
+            <i class="fas fa-align-justify" style="color:white;"></i>
+            </button>
+	<a class="navbar-brand" href="#"><h3>WebName</h3></a>
+	<button class="navbar-toggler btn btn-default" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="searchcol">
+    <i class="fa fa-search" id="schange" aria-hidden="true"></i>
+  </button>
+
+
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="nav navbar-nav">
+      		<li>
+		<form class="navbar-form navbar-left right-align" action="/action_page.php">
+                  <div class="input-group" style="width: 90%;margin:10px">
+                     <input type="text" class="form-control" placeholder="Search" name="search" style="
+                        border-radius: 4px;
+                        margin-right: 5px;
+                        ">
+                     <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" style="
+                           background-color: #8292DD;
+                           border-radius: 4px;
+                           ">
+				<i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                     </div>
+                  </div>
+               </form>
+		</li>
+      
+    </ul>
+  </div>
+	
+	
+      </nav>
+      <div class="container">
+         <div class="b-margin"></div>
+<div class="b-margin"></div>
+         <div class="center b-margin">
+            <img src="dist/image/logo-2.png" width="25%" style="max-width:100px">
+         </div>
+         <h1 style="text-align:center;margin-bottom: 20px;">Hello</h1>
+         <div class="center" style="margin-bottom: 10px;">
+            <p class="fsize">Welcome to WebSiteName</p>
+         </div>
+         <div class="center" style="margin-bottom: 6em;">
+            <p class="fsize">Login with Blockstack to continue. <span class="glyphicon glyphicon-info-sign"></span></p>
+         </div>
+         <div class="b-margin" style="text-align:center;">
+            <button style="display: inline-block; background-color: rgb(39, 15, 52); border: 1px solid rgb(39, 15, 52); padding: 12px 25px; border-radius: 5px;"><img src="dist/image/85030ed37b1f45faf6e0c9cd4738cad4.webp" alt="Blockstack Logo" style="height: 25px;"><span style="font-size: 16px; font-family: &quot;Source Code Pro&quot;, monospace; padding-left: 10px; vertical-align: top; top: 3px; position: relative; color: rgb(255, 255, 255);">Sign In with Blockstack</span></button>
+         </div>
+         <div class="center b-margin">
+            <p class="fsize">Any feedback or suggestions ? <a href="contact-us">Contact us</a></p>
+         </div>
+      </div>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <!-- jQuery Custom Scroller CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+             $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+             });
+         
+             $('#dismiss, .overlay').on('click', function () {
+                 $('#sidebar').removeClass('active');
+                 $('.overlay').removeClass('active');
+             });
+         
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').addClass('active');
+                 $('.overlay').addClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+         });
+	$( "#searchcol" ).click(function() {
+  		if($('#schange').hasClass('fa-search')) {
+			$('#schange').removeClass('fa-search');
+			$('#schange').addClass('fa-times');
+		}
+		else {
+			$('#schange').removeClass('fa-times');
+			$('#schange').addClass('fa-search');
+		}
+	});
+      </script>
+   </body>
+</html>
