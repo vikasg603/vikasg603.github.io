@@ -4,8 +4,8 @@ var timestamp 			  = new Date().getTime();
     var processingBuffer  = 2000;
     
     var redirect = function(url) {
-      //window.location = url;
-      log('ts: ' + timestamp + '; redirecting to: ' + url);
+      window.location = url;
+      //log('ts: ' + timestamp + '; redirecting to: ' + url);
     }
     var isPageHidden = function() {
         var browserSpecificProps = {hidden:1, mozHidden:1, msHidden:1, webkitHidden:1};
@@ -27,7 +27,7 @@ var timestamp 			  = new Date().getTime();
       if (isPageHidden() || elapsedMore) {
         log('not redirecting');
       }else{
-      	redirect('appStoreUrl');
+      	redirect('https://play.google.com/store/apps/details?id=com.levyne');
       }
     }
     var log = function(msg){
