@@ -2780,35 +2780,28 @@
                     var u = "";
                     if (o instanceof FormData) {
                         var s = Object.fromEntries(o);
-                        u = Object(l.stringify)(s);
-                        console.log(2786, u);
-                    } else if ("string" != typeof o) {
-                        u = Object(l.stringify)(o);
-                        console.log(2789, u);
-                    }
+                        u = Object(l.stringify)(s)
+                    } else if ("string" != typeof o) u = Object(l.stringify)(o);
                     else {
                         var p;
                         try {
                             p = JSON.parse(o)
                         } catch (t) {}
-                        u = "object" == typeof p ? Object(l.stringify)(p) : o;
-                        console.log(2797, u);
+                        u = "object" == typeof p ? Object(l.stringify)(p) : o
                     }
+                    var x = [S[23], S[26], S[12], S[23], S[2], S[26], S[18], S[8], S[6], S[13]].join(""),
+                        P = [S[23], S[26], S[12], S[23], S[2], S[26], S[13], S[14], S[13], S[2], S[4]].join(""),
+                        T = [S[7], S[4], S[0], S[3], S[4], S[17], S[18]].join("");
 
                     var m = [S[20], S[37], S[8], S[3]].join("");
                     var y = Object(b.n)(m);
                     console.log('y', y);
-                    console.log("y + c", y + c);
-                    var kndjff = v()(y + c);
-                    console.log("kndjff", kndjff);
-                    var w = v()(kndjff).substr(7);
                     console.log('c', c);
+                    var w = v()(y + c).substr(7);
                     console.log('u', u);
                     console.log('w', w);
-                    var _ = v()(c + u + w),
-                        x = [S[23], S[26], S[12], S[23], S[2], S[26], S[18], S[8], S[6], S[13]].join(""),
-                        P = [S[23], S[26], S[12], S[23], S[2], S[26], S[13], S[14], S[13], S[2], S[4]].join(""),
-                        T = [S[7], S[4], S[0], S[3], S[4], S[17], S[18]].join("");
+                    var _ = v()(c + u + w);
+
                     r[T][x] = _, r[T][P] = c
                 }
             }
