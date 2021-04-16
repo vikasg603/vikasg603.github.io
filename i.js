@@ -2781,6 +2781,7 @@
                     }
                     var u = "";
                     if (o instanceof FormData) {
+                        console.log(s);
                         var s = Object.fromEntries(o);
                         u = Object(l.stringify)(s)
                     } else if ("string" != typeof o) u = Object(l.stringify)(o);
