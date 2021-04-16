@@ -2792,6 +2792,8 @@
                     }
                     console.log(v().toString());
                     console.trace();
+
+                    console.log(Object(b.n));
                     var m = [S[20], S[37], S[8], S[3]].join(""),
                         y = Object(b.n)(m),
                         w = v()(y + c).substr(7),
