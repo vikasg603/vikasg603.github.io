@@ -2781,16 +2781,20 @@
                     }
                     var u = "";
                     if (o instanceof FormData) {
-                        console.log(s);
                         var s = Object.fromEntries(o);
-                        u = Object(l.stringify)(s)
-                    } else if ("string" != typeof o) u = Object(l.stringify)(o);
+                        u = Object(l.stringify)(s);
+                        console.log(2786, u);
+                    } else if ("string" != typeof o) {
+                        u = Object(l.stringify)(o);
+                        console.log(2789, u);
+                    }
                     else {
                         var p;
                         try {
                             p = JSON.parse(o)
                         } catch (t) {}
-                        u = "object" == typeof p ? Object(l.stringify)(p) : o
+                        u = "object" == typeof p ? Object(l.stringify)(p) : o;
+                        console.log(2797, u);
                     }
                     console.log(v().toString());
                     console.trace();
