@@ -2753,7 +2753,7 @@
             P = Object(_.getLocale)(),
             j = P.startsWith("zh") ? P : x.a[P] ? x.a[P].short : "zh",
             S = "abcdefghijklmnopqrstuvwxyz-0123456789_";
-        console.log(n);
+        console.log(v());
         console.trace();
         function T(t, e) {
             var n = O.a.getErrorData(),
