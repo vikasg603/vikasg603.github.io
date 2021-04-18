@@ -4,6 +4,10 @@ Office.onReady((info) => {
     document.getElementById("app-body").style.display = "flex";
     document.getElementById("run").onclick = () => tryCatch(setup);
   }
+  var DropdownHTMLElements = document.querySelectorAll('.ms-Dropdown');
+  for (var i = 0; i < DropdownHTMLElements.length; ++i) {
+    var Dropdown = new fabric['Dropdown'](DropdownHTMLElements[i]);
+  }
 });
 
 var book_string =
