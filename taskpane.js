@@ -6,7 +6,7 @@ Office.onReady((info) => {
   }
   var DropdownHTMLElements = document.querySelectorAll('.ms-Dropdown');
   for (var i = 0; i < DropdownHTMLElements.length; ++i) {
-    var Dropdown = new fabric['Dropdown'](DropdownHTMLElements[i]);
+    new fabric['Dropdown'](DropdownHTMLElements[i]);
   }
 });
 
@@ -36,6 +36,9 @@ var regex_string =
 const regex = new RegExp(regex_string, "ig");
 const book_chap_regex = new RegExp(book_chap, "gi");
 
+const versionSelect = document.getElementById("version");
+const colorSelect = document.getElementById("color");
+
 const setup = async () => {
   await Word.run(async (context) => {
     try {
@@ -64,12 +67,13 @@ const setup = async () => {
                 verse = matched[4];
                 var passage = book + " " + chapter + ":" + verse;
 
-                const hyperlink = `https://www.biblegateway.com/passage/?search=${passage}&version=NKJV&src=tools`;
+                const hyperlink = `https://www.biblegateway.com/passage/?search=${passage}&version=${versionSelect.value}&src=tools`;
 
                 const SearchItems = paragraph.search(matched[0]);
                 SearchItems.load("items");
                 await paragraph.context.sync();
                 SearchItems.items[0].hyperlink = hyperlink;
+                SearchItems.items[0].font.color = colorSelect.value;
               } catch (err) {
                 console.log(matched[0]);
                 console.log(err);
