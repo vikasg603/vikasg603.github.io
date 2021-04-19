@@ -1,4 +1,8 @@
+let versionSelect, colorSelect;
+
 Office.onReady((info) => {
+  versionSelect = document.getElementById("version");
+  colorSelect = document.getElementById("color");
   if (info.host === Office.HostType.Word) {
     document.getElementById("sideload-msg").style.display = "none";
     document.getElementById("app-body").style.display = "flex";
@@ -35,9 +39,6 @@ var regex_string =
 
 const regex = new RegExp(regex_string, "ig");
 const book_chap_regex = new RegExp(book_chap, "gi");
-
-const versionSelect = document.getElementById("version");
-const colorSelect = document.getElementById("color");
 
 const setup = async () => {
   await Word.run(async (context) => {
